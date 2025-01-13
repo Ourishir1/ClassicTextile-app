@@ -1,0 +1,134 @@
+/* General Form Styling */
+.AddFabricForm {
+    max-width: 600px; /* Set maximum width for form */
+    margin: 20px auto; /* Center the form horizontally and add margin on top */
+    padding: 30px; /* Add extra padding for a spacious design */
+    background-color: #ffffff; /* White background for a clean and fresh feel */
+    border-radius: 12px; /* Slightly more rounded corners for a modern look */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Deeper shadow for a floating effect */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean modern font */
+    transition: all 0.3s ease; /* Smooth transition for hover/active states */
+  }
+  
+  /* Form Elements Gap */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Increase the gap between the form elements (text fields, buttons, etc.) */
+  }
+  
+  /* Styling for Text Fields */
+  .MuiTextField-root {
+    background-color: #ffffff; /* White background for text fields */
+    border-radius: 8px;
+    padding: 8px;
+    margin-bottom: 20px; /* Add margin bottom to create spacing between text fields */
+    transition: all 0.3s ease; /* Smooth transition for focus state */
+  }
+  
+  /* Color Squares Styling */
+  .colorSelector {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+  }
+  
+  .colorSquare {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: transform 0.3s ease, border 0.3s ease;
+  }
+  
+  .colorSquare:hover {
+    transform: scale(1.1);
+    border: 2px solid #333;
+  }
+  
+  .colorSquare.selected {
+    border: 2px solid #4caf50;
+    transform: scale(1.1);
+  }
+  
+  /* Category Dropdown Styling */
+  .MuiFormControl-root {
+    background-color: white;
+    border-radius: 8px;
+    padding: 8px;
+  }
+  
+  .MuiSelect-root {
+    border-radius: 8px;
+  }
+  
+  .MuiMenuItem-root {
+    border-radius: 8px;
+  }
+  
+  /* Button Styling */
+  .MuiButton-root {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition for background and hover effect */
+  }
+  
+  .MuiButton-root:hover {
+    background-color: #45a049;
+    transform: translateY(-2px); /* Slight lift on hover for interaction */
+  }
+  
+  .MuiButton-root:disabled {
+    background-color: #9e9e9e;
+    cursor: not-allowed;
+  }
+  
+  /* Input Labels */
+  .MuiInputLabel-root {
+    font-weight: 500;
+    color: #333;
+  }
+  
+  /* Hover Effects for Inputs */
+  .MuiInputBase-input:focus,
+  .MuiSelect-root:focus {
+    border-color: #4CAF50;
+    outline: none;
+  }
+  
+  /* Error Message Styling */
+  .MuiFormHelperText-root {
+    color: #f44336;
+    font-size: 12px;
+  }
+  
+  /* Specific Card Styling */
+  .MuiCard-root.AddFabricFormCard {
+    background-color: rgb(65, 63, 63); /* Set background color */
+    padding-top: 30px; /* Add padding from the top of the card */
+    padding-bottom: 30px; /* Add bottom padding */
+    padding-left: 40px; /* Add padding on the left and right */
+    padding-right: 40px;
+    border-radius: 8px; /* Optional: Add border radius to card */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for depth */
+    margin-top: 20px; /* Optional: add margin top for spacing from other elements */
+    width: 50%; /* Set the width of the card to 50% of its parent container */
+    margin-left: auto; /* Center the card horizontally */
+    margin-right: auto; /* Center the card horizontally */
+  }
+  
+  /* Header padding (if needed) */
+  .MuiCardHeader-root {
+    padding-top: 10px; /* Add padding from the header */
+  }
+  
+  /* Optional: If you want the card content to be more compact */
+  .MuiCardContent-root {
+    padding: 16px; /* Adjust padding for the content inside the card */
+  }
+  

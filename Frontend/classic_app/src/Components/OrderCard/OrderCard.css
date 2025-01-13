@@ -1,0 +1,79 @@
+.OrderCard {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .OrderCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .OrderCard h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .OrderCard p {
+    margin: 8px 0;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .OrderCard p strong {
+    color: #333;
+  }
+  
+  .OrderCard h3 {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    color: #444;
+  }
+  
+  .OrderCard ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .OrderCard li {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #f0f0f0;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .OrderCard li p {
+    margin: 5px 0;
+  }
+  
+  .OrderCard li p strong {
+    color: #333;
+  }
+  
+  @media (max-width: 768px) {
+    .OrderCard {
+      padding: 15px;
+      margin: 15px auto;
+    }
+  
+    .OrderCard h2 {
+      font-size: 1.4rem;
+    }
+  
+    .OrderCard p {
+      font-size: 0.9rem;
+    }
+  
+    .OrderCard h3 {
+      font-size: 1.2rem;
+    }
+  }
+  

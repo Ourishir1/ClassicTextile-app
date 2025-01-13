@@ -1,0 +1,37 @@
+.MyOrders {
+    padding: 20px;
+    background-color: #f9f9f9; /* Light gray background for contrast */
+    min-height: 100vh; /* Ensures the page fills the viewport */
+  }
+  
+  .MyOrders h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333; /* Dark text color for better readability */
+    text-align: center; /* Center-align the title */
+  }
+  
+  .MyOrders .MuiGrid2-root {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Center-align grid items */
+    padding: 10px;
+  }
+  
+  .OrderCard {
+    flex: 1 1 calc(300px - 20px); /* Responsive card sizing */
+    max-width: 300px; /* Maximum width for each card */
+    margin: 10px;
+    background-color: #ffffff; /* White background for card */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensures content stays within the card */
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .OrderCard:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+  }
+  

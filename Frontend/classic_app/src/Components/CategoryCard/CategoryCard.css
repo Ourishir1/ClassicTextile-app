@@ -1,0 +1,61 @@
+/* General styles for the card */
+.CategoryCard {
+    width:500px;
+    height:300px;
+    background-size: cover; /* Ensure the image covers the card */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
+    border-radius: 15px; /* Smooth, rounded edges */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    display: flex; /* Flexbox to center the button */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: relative; /* To allow overlay effects */
+    overflow: hidden; /* Prevent content overflow */
+
+}
+@media (max-width: 768px) {
+    .CategoryCard {
+        width:100%;
+        height:300px;
+    }
+    
+}
+
+/* Styling for the button with enhanced design */
+.CategoryButton {
+    padding: 14px 28px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white; /* White text for contrast */
+    background: linear-gradient(145deg, #1f1f1f, #3a3a3a); /* Dark gradient background */
+    border: none; /* Remove border for a cleaner look */
+    border-radius: 35px; /* More rounded edges */
+    cursor: pointer;
+    backdrop-filter: blur(8px); /* Glass effect */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.3); /* Soft shadow with light effect */
+    font-family: 'Arial', sans-serif;
+    transition: all 0.3s ease; /* Smooth transition */
+    text-transform: uppercase; /* Make text bold and capitalized */
+}
+
+/* Button hover effect */
+.CategoryButton:hover {
+    background: linear-gradient(145deg, #3a3a3a, #5a5a5a); /* Lighter gradient on hover */
+    transform: scale(1.1); /* Slight enlargement */
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4), -5px -5px 20px rgba(255, 255, 255, 0.4); /* More prominent shadow */
+}
+
+/* Button active effect */
+.CategoryButton:active {
+    background: linear-gradient(145deg, #1f1f1f, #3a3a3a); /* Return to original gradient */
+    transform: scale(1); /* Reset scale */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.3); /* Reset shadow */
+}
+
+/* Card hover effect */
+.CategoryCard:hover {
+    transform: translateY(-5px); /* Subtle lift effect */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+    transition: all 0.3s ease-in-out; /* Smooth hover animation */
+}

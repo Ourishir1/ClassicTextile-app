@@ -1,0 +1,74 @@
+.EditFabric {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4; /* Light gray background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 100%;
+    max-width: 800px; /* Limit width of the form */
+    margin: auto;
+    margin-top: 20px;
+  }
+  
+  .EditFabric h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333; /* Dark text for better contrast */
+  }
+  
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .MuiTextField-root {
+    margin-bottom: 10px;
+  }
+  
+ /* Add this to your EditFabric.css or a similar stylesheet */
+
+.colorSelector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.colorSquare {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border: 2px solid transparent; /* Default border */
+  border-radius: 50%; /* Circular color squares */
+  transition: border-color 0.3s ease; /* Smooth transition for the border */
+}
+
+.colorSquare.selected {
+  border-color: #000; /* Border color when selected */
+  transform: scale(1.1); /* Optional: Slightly increase size when selected */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for emphasis */
+}
+
+/* Optional: Add hover effect */
+.colorSquare:hover {
+  opacity: 0.8;
+}
+
+  
+  .EditFabric button {
+    align-self: flex-start;
+    margin-top: 20px;
+    background-color: #3f51b5; /* Primary color */
+    color: white; /* White text for the button */
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #303f9f; /* Darken the button color on hover */
+  }
+  
